@@ -2730,7 +2730,7 @@
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-image: url('../../images/nailook_m.jpg'); background-size: cover;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2738,15 +2738,15 @@
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-image: url('../../images/thein.jpg'); background-size: cover;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-image: url('../../images/theinedu.jpg'); background-size: cover;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-image: url('../../images/edureserve.jpg'); background-size: cover;
 			}
 
 			.tiles article.style6 > .image:before {
