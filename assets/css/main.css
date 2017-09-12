@@ -2734,7 +2734,7 @@
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-image: url('../../images/webnailook.jpg'); background-size: cover;
 			}
 
 			.tiles article.style3 > .image:before {
