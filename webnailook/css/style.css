@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-.wrap {width:100%; position:relative;}
+.wrap {position:relative;}
 
 /* 상단 */
 .top_area {width:100%; position:fixed; z-index:100; top:0; box-shadow:0px 1px 4px #828282; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
