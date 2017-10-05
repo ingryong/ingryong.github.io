@@ -1,0 +1,244 @@
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    
+	<meta charset="utf-8" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>-->
+	<meta name="description" content="백철우, 퍼블리셔, 포트폴리오"/>
+	<meta name="keywords" content="백철우 포트폴리오 페이지"/>
+	
+	<title>백철우 포트폴리오 페이지 - 네일룩</title>
+	
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="assets/js/index.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/style.css"/>
+	
+	<script src="js/sub.js"></script>	
+	<link rel="stylesheet" href="assets/css/sub01.css"/>
+	  
+</head>
+<body>
+	<div id="wrap">
+		<div class="container sub02">
+			<!--1. 헤더 영역-->
+			<header>
+				<div class="inner">
+					<!--실질적 헤더 영역-->
+					<div class="cont_left">
+						<div class="cont_left_title">
+							<h1>
+								<span>네일룩</span>
+								<span>제작</span>
+							</h1>
+							<p class="num">
+								01
+							</p>
+							<p class="desc jp">
+								CLIENT&nbsp;|&nbsp; (주)더인
+								<br />DEVICE&nbsp;|&nbsp; MOBILE WEB / APP
+							</p>
+						</div>
+						<div class="cont_left_btn">
+							<a onclick="window.open('http://www.nailook.com', '_blank', 'width=360, height=600')" class="btn_shortcut_1 cp" title="새 창으로 열립니다.">&gt; 결과물 보기</a>
+						</div>
+					</div>
+					<div class="zlayers_3"></div>
+					<div class="zlayers_4"></div>
+				</div>
+			
+			<!--네비게이션-->
+			<nav>
+				<div class="nav_indicator">
+					<input type="checkbox" id="toggle-menu"/>
+					<label for="toggle-menu">
+					<span class="menu-icon"></span>
+					</label>
+					<div class="line"></div>
+					<p class="guide cur_def">네일룩</p>
+				</div>
+				<h2 class="text_hide">NAVIGATION</h2>
+				<div class="nav_container">
+					<div class="inner">
+						<ol id="gnb" class="txt_effect">
+							<li><a href="index.html#link_about" class="mnuName" data-hover="Intro">Intro</a></li>
+							<li><a href="index.html#link_web" class="mnuName" data-hover="Skills">Skills</a></li>
+							<li><a href="index.html#link_design" class="mnuName" data-hover="Portfolio">Portfolio</a></li>
+							<li><a href="index.html#link_contact" class="mnuName" data-hover="연락처">연락처</a></li>
+						</ol>
+					</div>
+				</div>
+			</nav>
+				
+			</header>
+			<!--end of header-->
+			
+			<hr/>
+			
+			<section id="work_process">
+				<h2 class="text_hide">WORK PROCESS</h2>
+				<div class="preview">
+				</div>
+				
+				<article class="check">
+					<div class="title">
+						<h3>CHECK IT OUT</h3>
+						<p class="title_desc">이렇게 만들었습니다, 확인해 보세요! 우측 버튼을 눌러 다른 것도 보실 수 있습니다.</p>
+					</div>
+					<div class="main">
+						<div class="check_cont box_top">
+							<div class="txt t_1">
+								<p><span class="jp">Color system</span><strong>과일과 주조색으로 발랄함을 표현</strong></p>
+								<p>과일 이미지를 활용해  제품의 날씬한 느낌을 살리고, 메인컬러 주황과 서브컬러 초록을 사용해 10대 및 20대 메인 타겟층에 맞춘 시원하고 발랄한 느낌을 표현했습니다. </p>
+							</div>
+							<div class="txt t_2">
+								<p><span class="jp">Progress bar</span><strong>이미지 갤러리와 진행바</strong></p>
+								<p>모달창으로 이미지 갤러리를 만든 뒤 진행바를 넣어, 100% 진행되면 자동으로 다음 이미지로 넘어가게 했습니다.
+								<br />(setInterval과 if문을 결합하여 width값을 상승시킴)</p>
+							</div>
+							<ol class="page p_top">
+								<li class="text_indent on"><a href="#">1</a></li><li class="text_indent"><a href="#">2</a></li>
+							</ol>
+							<button class="page_stop top jp">||</button>
+						</div>
+						<!--end of check_cont box_1-->
+						<div class="check_cont box_bottom">
+							<div class="txt t_3">
+								<p><span class="jp">Navigation</span><strong>스크롤에 따른 네비게이션 표시</strong></p>
+								<p>스크롤 이벤트 발생 시 스크롤의 위치를 변수에 저장하고,<br/> 새롭게 스크롤이 되면 그 값과 변수에 저장된 값을 비교하여 스크롤 업/다운 여부를 파악했습니다.
+								(2중 if문 사용)</p>
+							</div>
+							<div class="txt t_4">
+								<p><span class="jp">Scoll event</span><strong>스크롤에 따른 이미지 페이드인</strong></p>
+								<p>스크롤이 특정 article에 가까워지면 이미지가 페이드인 하는 이벤트를 만들었습니다. 
+								<br />(z-index에 따라 나타나는 순서가 달라지며, 이벤트 발생 여부는 변수에 true 또는 false로 저장)</p>
+							</div>
+							<ol class="page p_bottom">
+								<li class="text_indent on"><a href="#">1</a></li><li class="text_indent"><a href="#">2</a></li>
+							</ol>
+							<button class="page_stop bottom jp">||</button>
+						</div>
+						<!--end of check_cont box_2-->
+					</div>
+					<!--end of div.main-->
+				</article>
+				
+				<hr />
+				
+				<article class="plan">
+					<div class="title">
+						<h3>PLANNING</h3>
+						<p class="title_desc">실제 작업에 들어가기 전 구상한 아이디어입니다.</p>
+					</div>
+					
+					<div class="main clearfix">
+						<div class="plan_cont box_1">
+							<p class="num">1</p>
+							<p class="s_title jp">The important thing is...</p>
+							<strong>강점과 약점, 그리고 전략</strong>
+							<div class="txt">
+								<p>미에로 화이바는 식이섬유를 함유하고 있어  몸매 관리에<br/>
+								도움을 주는 음료임을 마케팅 전략으로 삼고 있습니다.<br/>
+								다이어트에 관심이 많은 10대-20대 여성이 메인 타겟층임에도<br/>불구하고, 홈페이지가 다소 오래되고 부실한 느낌입니다.</p>
+								<p>미에로 화이바의 키워드인 건강, 젊음, 발랄, 세련을 더욱<br/>
+								부각시키고자 메인컬러, 과일 이미지, 미에로 모델을 활용하여 리뉴얼하기로 했습니다. </p>
+							</div>
+						</div>
+						<!--end of .plan_cont box_1-->
+						
+						<div class="plan_cont box_2">
+							<p class="num">2</p>
+							<p class="s_title jp">It will be better and better!</p>
+							<strong>리뉴얼 방향 설정</strong>
+							<div class="txt">
+								<p>- 원페이지로 레이아웃을 바꿔 프로모션 페이지에 적합하게
+								<br />- 관리되지 않는 게시판은 과감히 삭제하고 SNS를 주력으로 
+								<br />- 발랄하고 세련된 헤더를 배치하여 유저를 잡아끌 수있게 
+								<br />- 미에로 화이바의 마케팅인 식이섬유, 미에로걸이 눈에 띄게</p>
+							</div>
+						</div>
+						<!--end of .plan_cont box_2-->
+					</div>
+					<!--end of .main-->
+				</article>
+				
+				<hr />
+				
+				<article class="epilogue">
+					<div class="title">
+						<h3>EPILOGUE</h3>
+						<p class="title_desc">작업을 통해 배우고 느낀 점이 많습니다.</p>
+					</div>
+					<div class="main">
+						<div class="epilogue_txt">
+							<p>기존 사이트를 원페이지로 만드는 것이 과제였습니다. 미에로 화이바를 대상으로 선정한 뒤, 원래 홈페에지의 내용을 분석하여<br />
+							구성을 완전히 바꾸었습니다. 기존의 이미지나 글을 거의 활용할 수 없어서 하나하나 재보정하고 글을 정리해야했습니다. <br />
+							어렵고 귀찮은 과정이었지만 웹기획을 간접적으로나마 체험할 수 있었습니다.
+							</p>
+							<p>
+							<br />특히, 플러그인을 일절 사용하지 않고 순수 코딩만으로 결과물이 나왔다는 점에서 뿌듯함을 느끼는 작품입니다 :) 
+							</p>
+						</div>
+						<div class="epilogue_btn">
+							<a href="works/miero/index.html" class="btn_shortcut_1" target="_blank" title="새 창으로 열립니다.">&gt; 리뉴얼 사이트 보기 </a>
+						</div>
+					</div>
+					<!--end of .main-->
+				</article>
+				
+			</section>
+			<!--end of section.work_process-->
+			
+			<hr />
+			
+			<section id="more_works">
+				<h2 class="text_hide">MORE WORKS</h2>
+				<div class="container">
+				<strong class="jp cur_def left">Other Web Works</strong>
+					<div class="cont_left">
+						<img src="images/sub_web_thum_1.jpg" alt="다른 작업물 보기" />
+						<div class="desc left"> <!--롤오버 상세설명-->
+							<p class="title">로젠 택배</p>
+							<p>모바일/PC 리뉴얼</p>
+							<a href="sub_web_1.html" class="text_indent">←</a>
+						</div>
+					</div>
+					
+				<strong class="jp cur_def right">Other Web Works</strong>
+					<div class="cont_right">
+						<img src="images/sub_web_thum_3.jpg" alt="다른 작업물 보기"/>
+						<div class="desc right"> <!--롤오버 상세설명-->
+							<p class="title">포트폴리오 사이트</p>
+							<p>기획/디자인/코딩</p>
+							<a href="sub_web_2.html" class="text_indent">→</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<hr />
+			
+		</div>
+		<!--end of #wrap>.container-->
+		
+		
+		<div class="bg">
+			<div class="bg_top"></div>
+			<div class="bg_middle"></div>
+			<div class="bg_bottom"></div>
+		</div>
+		
+		<div class="move">
+			<a href="#" class="to_top_bottom text_indent">페이지 이동 버튼</a>
+			<a href="index.html" class="to_home text_indent">홈으로 이동 버튼</a>
+		</div>
+		
+		<footer>
+			<p>&copy; 2017 CHEOLWOO BAEK</p>
+			<p><span>TㆍHㆍAㆍNㆍK</span>YㆍOㆍU</p>
+			<address><a href="tel:01032342398">010 - 3234 - 2398</a> / <a href="mailto:bbgod2@gmail.com">bbgod2@gmail.com</a></address>
+		</footer>
+	</div>
+</body>
+</html>

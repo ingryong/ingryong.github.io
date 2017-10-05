@@ -147,10 +147,10 @@ section#portfolio .links>a>.accent_2{color:#4fb8e2; font-weight:600;}
 
 
 /*롤오버 효과*/
-.web.w_1 a.shortcut{background-image:url(../images/main_web_thu_1_hover.jpg);}
-.web.w_2 a.shortcut{background-image:url(../images/main_web_thu_2_hover.jpg);}
-.web.w_3 a.shortcut{background-image:url(../images/main_web_thu_3_hover.jpg);}
-.web.w_4 a.shortcut{background-image:url(../images/main_web_thu_4_hover.jpg);}
+.web.w_1 a.shortcut{background-image:url(../../images/nailook_m_hover.jpg);}
+.web.w_2 a.shortcut{background-image:url(../../images/webnailook_hover.jpg);}
+.web.w_3 a.shortcut{background-image:url(../../images/thein_hover.jpg);}
+.web.w_4 a.shortcut{background-image:url(../../images/theinedu_hover.jpg);}
 
 .web{position:relative;}
 .web img{opacity:1; -webkit-transition:all 0.2s ease-in; transition:all 0.2s ease-in;}
