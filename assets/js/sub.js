@@ -127,10 +127,10 @@ $(function(){
 	//5초마다 자동으로 바뀌는 인터벌
 	function checkPageInterval_top_fun(){
 		checkPageInterval_top = setInterval(function(){
-		if ( checkPageIdx_top > $(".page.p_top").size()-1 ){
+		if ( checkPageIdx_top > $(".page.p_top").size()+1){
 			checkPageIdx_top = 0;
 		}else{
-			checkPageIdx_top ++
+			checkPageIdx_top ++;
 		}
 		//console.log(checkPageIdx_top)
 		checkPage_top_change()
@@ -141,10 +141,10 @@ $(function(){
 	//7초마다 자동으로 바뀌는 인터벌
 	function checkPageInterval_bottom_fun(){
 		checkPageInterval_bottom = setInterval(function(){
-		if ( checkPageIdx_bottom > $(".page.p_bottom").size()-1 ){
+		if ( checkPageIdx_bottom > $(".page.p_bottom").size()+1){
 			checkPageIdx_bottom = 0;
 		}else{
-			checkPageIdx_bottom ++
+			checkPageIdx_bottom ++;
 		}
 		//console.log(checkPageIdx_bottom)
 		checkPage_bottom_change()
