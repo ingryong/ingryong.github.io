@@ -49,16 +49,6 @@ $(function(){
 		}
 	})
 	
-	
-	//네비 메뉴 클릭 시 해당 위치로 이동
-	$nav_mnu.on("click",function(evt){
-		evt.preventDefault();
-		CloseDesignModal(); //라이트박스 무조건 닫기
-		var idx = ($nav_mnu.index($(this))) //+1을 하는 이유는 맨 처음이 0이기 때문.
-		$body.stop().animate({scrollTop:secTop[idx]}, function(){
-			naviClose();
-		});	
-	});
 
 	//ESC를 눌러 닫기 (메뉴, 라이트박스 공용)
 	$(document).on("keyup",function(evt){

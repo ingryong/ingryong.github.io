@@ -64,24 +64,24 @@ header>.inner>.cont_left>.cont_left_title>.desc{margin:16px 0; font-size:13px; c
 
 /*버튼*/
 header>.inner>.cont_left>.cont_left_btn{position:relative; margin-top:35px;}
-header>.inner>.cont_left>.cont_left_btn>a{display:inline-block; height:32px; line-height:32px; margin-right:100px; margin-bottom:7px; padding:0 10px; font-size:18px; letter-spacing:-0.03em;color:#fff; border:2px solid #fff; background:none; transition:all 0.3s; }
+header>.inner>.cont_left>.cont_left_btn>a{display:inline-block; height:32px; line-height:32px; margin-right:100px; margin-bottom:7px; padding:0 10px; font-size:20px; letter-spacing:-0.03em;background-color:#fff; border:0; border-right:1px solid #959595; border-bottom:1px solid #959595; transition:all 0.3s; }
 header>.inner>.cont_left>.cont_left_btn>a:last-child{height:30px; font-size:18px; border:2px solid #fff; background:none; box-shadow:none; transition:all 0.3s; color:#fff; }
 header>.inner>.cont_left>.cont_left_btn>a.btn_shortcut_1:before{display:block; position:absolute; top:-26px; right:98%; width:31px; height:30px; background-image:url(../images/sub_web_header_icon.png);  content:'';}
 header>.inner>.cont_left>.cont_left_btn>a:hover{box-shadow:2px 2px 0px #8e7546; transition:all 0.2s; }
 
 /*z-layers용 이미지*/
 .zlayers_1{position:absolute; top:0; left:80px; width:256px; height:189px; background-image:url(../../images/header_zlayers_1.png);}
-.zlayers_2{position:absolute; bottom:-20px; right:-20px; width:600px; height:395px; background-image:url(../../images/header_zlayers_2.png);}
-.zlayers_3{position:absolute; bottom:-20px; left:370px; width:300px; height:600px; background-image:url(../../images/header_zlayers_3.png);}
-
-
+.zlayers_2 {position: absolute; top: 45px; right: 20px; width: 549px; height: 334px; background-image: url(../../images/header2_zlayers_2.png);
+}
+.zlayers_3 {position: absolute; bottom: -30px; right: 35px; width: 138px; height: 218px; background-image: url(../../images/header2_zlayers_3.png);
+}
 /* ==================================================== */
 
 
 
 /* - - - - - - - - section#work_process - - - - - - - - */
 
-#work_process>.preview{width:920px; height:487px; margin:20px auto 0; background-image:url(../../images/sub_web_pre_1.jpg);}
+#work_process>.preview{width:920px; height:487px; margin:20px auto 0; background-image:url(../../images/sub_web_pre_2.jpg);}
 
 
 
@@ -95,8 +95,8 @@ article.check>.title>h3:before{background-position: 0 0;}
 /*레이아웃*/
 article.check>.main{padding-bottom:60px;}
 article.check>.main>.check_cont{position:relative; width:760px; height:230px; margin:-20px auto; background-size:290px 230px; background-repeat:no-repeat; border:1px solid #a1a1a1;}
-article.check>.main>.check_cont.box_top{margin-bottom:40px; background-image:url(../../images/sub_web_1_check_top_0.jpg);}
-article.check>.main>.check_cont.box_bottom{ background-image:url(../../images/sub_web_1_check_bottom_0.jpg); }
+article.check>.main>.check_cont.box_top{margin-bottom:40px; background-image:url(../../images/sub_web_2_check_top_0.jpg);}
+article.check>.main>.check_cont.box_bottom{ background-image:url(../../images/sub_web_2_check_bottom_0.jpg); }
 article.check>.main>.check_cont>.txt{padding-right:70px;  margin-left:322px;}
 
 /*텍스트 영역(제목)*/
@@ -109,12 +109,7 @@ article.check>.main>.check_cont>.txt>p:last-child{font-size:15px; color:#454545;
 
 /*텍스트영역(숨김)*/
 article.check>.main>.check_cont>.t_2{display:none;}
-article.check>.main>.check_cont>.t_3{display:none;}
 article.check>.main>.check_cont>.t_4{display:none;}
-article.check>.main>.check_cont>.t_6{display:none;}
-article.check>.main>.check_cont>.t_7{display:none;}
-article.check>.main>.check_cont>.t_8{display:none;}
-
 
 
 /*페이지네이션*/
@@ -123,7 +118,7 @@ article.check>.main>.check_cont>.page>li{display:inline-block; width:13px; heigh
 article.check>.main>.check_cont>.page>li.on{background-color:#ff3778;}
 article.check>.main>.check_cont>.page>li>a{display:block; width:100%; height:100%;}
 
-.page_stop{display:block; position:absolute; top:10px; right:112px; cursor:pointer; padding:1px 8px; text-align:center; font-size:9px; background-color:#eee; border:0; color:#666; font-weight:600;}
+.page_stop{display:block; position:absolute; top:10px; right:62px; cursor:pointer; padding:1px 8px; text-align:center; font-size:9px; background-color:#eee; border:0; color:#666; font-weight:600;}
 .page_stop:focus{ outline:0;}
 
 
