@@ -133,7 +133,7 @@ $(function(){
 		}else{
 			//위->아래로 변환
 			moveToSwitch = true;
-			$moveBtn.removeClass("go_top");
+			$moveBtn.removeClass("go_bottom");
 		}
 	}
 });

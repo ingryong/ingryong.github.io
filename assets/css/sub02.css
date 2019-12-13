@@ -50,24 +50,24 @@ article{margin-bottom:40px;}
 /* - - - - - - - - 1. header - - - - - - - - */
 
 /*레이아웃*/
-header>.inner{position:relative; background-color:#ffe0fa;overflow:hidden;}
-header>.inner>.cont_left{z-index:100; position:relative; width:300px; height:515px; padding-left:70px; background-color:rgba(255,55,120,0.8); letter-spacing:-0.03em;} /*총 너비 300+70=370*/
+section>.inner{position:relative; background-color:#ffe0fa;overflow:hidden;}
+section>.inner>.cont_left{z-index:100; position:relative; width:300px; height:515px; padding-left:70px; background-color:rgba(255,55,120,0.8); letter-spacing:-0.03em;} /*총 너비 300+70=370*/
 
 /*제목*/
-header>.inner>.cont_left>.cont_left_title>h1{padding-top:100px;}
-header>.inner>.cont_left>.cont_left_title>h1>span{display:block; margin-top:-4px; color:#fff; font-size:66px; font-weight:800;}
-header>.inner>.cont_left>.cont_left_title>h1>span:last-child{color:#6b1834; font-size:56px; font-weight:normal; font-weight:600;}
+section>.inner>.cont_left>.cont_left_title>h1{padding-top:100px;}
+section>.inner>.cont_left>.cont_left_title>h1>span{display:block; margin-top:-4px; color:#fff; font-size:66px; font-weight:800;}
+section>.inner>.cont_left>.cont_left_title>h1>span:last-child{color:#6b1834; font-size:56px; font-weight:normal; font-weight:600;}
 
 /*숫자 및 설명*/
-header>.inner>.cont_left>.cont_left_title>.num{position:absolute; top:70px; left:75px; font-size:28px; color:#6b1834; font-weight:800;}
-header>.inner>.cont_left>.cont_left_title>.desc{margin:16px 0; font-size:13px; color:#fff; line-height:20px;}
+section>.inner>.cont_left>.cont_left_title>.num{position:absolute; top:70px; left:75px; font-size:28px; color:#6b1834; font-weight:800;}
+section>.inner>.cont_left>.cont_left_title>.desc{margin:16px 0; font-size:13px; color:#fff; line-height:20px;}
 
 /*버튼*/
-header>.inner>.cont_left>.cont_left_btn{position:relative; margin-top:35px;}
-header>.inner>.cont_left>.cont_left_btn>a{display:inline-block; height:32px; line-height:32px; margin-right:100px; margin-bottom:7px; padding:0 10px; font-size:20px; letter-spacing:-0.03em;background-color:#fff; border:0; border-right:1px solid #959595; border-bottom:1px solid #959595; transition:all 0.3s; }
-header>.inner>.cont_left>.cont_left_btn>a:last-child{height:30px; font-size:18px; border:2px solid #fff; background:none; box-shadow:none; transition:all 0.3s; color:#fff; }
-header>.inner>.cont_left>.cont_left_btn>a.btn_shortcut_1:before{display:block; position:absolute; top:-26px; right:98%; width:31px; height:30px; background-image:url(../images/sub_web_header_icon.png);  content:'';}
-header>.inner>.cont_left>.cont_left_btn>a:hover{box-shadow:2px 2px 0px #8e7546; transition:all 0.2s; }
+section>.inner>.cont_left>.cont_left_btn{position:relative; margin-top:35px;}
+section>.inner>.cont_left>.cont_left_btn>a{display:inline-block; height:32px; line-height:32px; margin-right:100px; margin-bottom:7px; padding:0 10px; font-size:20px; letter-spacing:-0.03em;background-color:#fff; border:0; border-right:1px solid #959595; border-bottom:1px solid #959595; transition:all 0.3s; }
+section>.inner>.cont_left>.cont_left_btn>a:last-child{height:30px; font-size:18px; border:2px solid #fff; background:none; box-shadow:none; transition:all 0.3s; color:#fff; }
+section>.inner>.cont_left>.cont_left_btn>a.btn_shortcut_1:before{display:block; position:absolute; top:-26px; right:98%; width:31px; height:30px; background-image:url(../images/sub_web_header_icon.png);  content:'';}
+section>.inner>.cont_left>.cont_left_btn>a:hover{box-shadow:2px 2px 0px #8e7546; transition:all 0.2s; }
 
 /*z-layers용 이미지*/
 .zlayers_1{position:absolute; top:0; left:80px; width:256px; height:189px; background-image:url(../../images/header_zlayers_1.png);}

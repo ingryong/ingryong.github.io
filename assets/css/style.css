@@ -3,7 +3,7 @@
 
 
 /* - - - - - - - - 리셋 요소 - - - - - - - - */
-html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,em,img,article,aside,footer,header,nav,address,section,time,ol,ul,li,hr,strong{margin:0; padding:0; border:0; vertical-align:baseline; -webkit-text-size-adjust:none; font-weight:400; font-style:normal;}
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,em,img,article,aside,footer,section,nav,address,section,time,ol,ul,li,hr,strong{margin:0; padding:0; border:0; vertical-align:baseline; -webkit-text-size-adjust:none; font-weight:400; font-style:normal;}
 ul,ol,li,dl{list-style:none}
 a:link,a:visited,a:hover,a:active{text-decoration:none; color:#111;}
 hr{display:none;}
@@ -11,7 +11,7 @@ img{border:0;}
 
 
 /* - - - - - - - - 공통 요소 - - - - - - - - */
-body{width:100%; min-width:1200px; overflow-y:scroll; }
+body{width:100%; min-width:1200px; overflow-y:scroll;}
 html,body,button{ text-shadow: rgba(0,0,0,.01) 0 0 1px; color:#343434; font-size:16px;font-family:'Nanum Square',돋움,dotum,굴림,gulim,sans-serif,Helvetica,AppleGothic;}
 button{cursor:pointer;}
 .container{width:1200px; margin:0 auto;}
@@ -34,12 +34,9 @@ button{cursor:pointer;}
 
 /* - - - - - - - - 메인페이지 - - - - - - - - */
 /*레이아웃*/
-header{overflow:hidden; width:100%; position:relative; background-color:#1ca8dd;}
-header>.container{position:relative; height:780px;}
-
-header>.container>.t_area {display:inline; position:absolute; left:10px; top:300px;}
-header>.container>.t_area>.t_text {padding:10px; color:#fff; font-size:48px; font-weight: bold;}
-header>.container>.t_area>.st_text {padding:10px; color:#fff; font-size:18px; line-height:24px;}
+header{position:fixed; display:flex; justify-content:space-between; align-items:center; left:0; right:0; top:0; padding:1rem; background:#000; z-index:100; opacity:0.8; font-weight:bold;}
+header>h1{margin:0; color:yellow;}
+header>nav>span{color:white; margin-left:20px;}
 
 
 /* - - - - - - - - 네비게이션 - - - - - - - - */
@@ -94,6 +91,14 @@ nav #gnb>li.lang>a{display:inline-block; width:100px; font-weight:400; font-size
 /* - - - - - - - -  2.  section#about - - - - - - - - */
 
 
+
+/*about*/
+section#about{overflow:hidden; width:100%; position:relative; background-color:#1ca8dd;}
+section#about>.container{position:relative; height:780px;}
+
+section#about>.container>.t_area {display:inline; position:absolute; left:10px; top:300px;}
+section#about>.container>.t_area>.t_text {padding:10px; color:#fff; font-size:48px; font-weight: bold;}
+section#about>.container>.t_area>.st_text {padding:10px; color:#fff; font-size:18px; line-height:24px;}
 
 /*skills*/
 section#skills>.container{position:relative; height:660px; background-color:#fff;}
