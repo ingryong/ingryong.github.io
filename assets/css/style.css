@@ -32,8 +32,27 @@ button{cursor:pointer;}
 #wrap .move>.to_home{bottom:3%; right:3%; margin-bottom:26px; margin-right:50px;   background-position: -1px -1px;  }
 
 
+/*타이핑 애니메이션*/
+p.typing-txt{display: none;}
+  
+.typing {  
+/*       position: absolute;*/ 
+     display: inline-block; 
+      animation-name: cursor; 
+      animation-duration: 0.5s; 
+      animation-iteration-count: infinite; 
+      background:rgba(255, 255, 0, 0.5);
+    } 
+    @keyframes cursor{ 
+      0%{border-right: 1px;} 
+      50%{border-right: 1px solid #000;} 
+      100%{border-right: 1px;} 
+    }
+
+
+
 /* - - - - - - - - 메인페이지 - - - - - - - - */
-/*레이아웃*/
+/*상단바*/
 header{position:fixed; display:flex; justify-content:space-between; align-items:center; left:0; right:0; top:0; padding:1rem; background:#000; z-index:100; opacity:0.8; font-weight:bold;}
 header>h1{margin:0; color:yellow;}
 header>nav>span{color:white; margin-left:20px;}
@@ -93,12 +112,12 @@ nav #gnb>li.lang>a{display:inline-block; width:100px; font-weight:400; font-size
 
 
 /*about*/
-section#about{overflow:hidden; width:100%; position:relative; background-color:#1ca8dd;}
+section#about{overflow:hidden; position:relative; background-image:url(../../images/about_background2.jpg); background-position:center auto; background-size:cover;}
 section#about>.container{position:relative; height:780px;}
 
-section#about>.container>.t_area {display:inline; position:absolute; left:10px; top:300px;}
-section#about>.container>.t_area>.t_text {padding:10px; color:#fff; font-size:48px; font-weight: bold;}
-section#about>.container>.t_area>.st_text {padding:10px; color:#fff; font-size:18px; line-height:24px;}
+section#about>.container>.t_area {display:inline; position:absolute; left:10px; top:300px; color:#000; text-shadow: 5 5 5px #fff;}
+section#about>.container>.t_area>.t_text {padding:10px; font-size:48px; font-weight: bold;}
+section#about>.container>.t_area>.st_text {padding:10px;  font-size:20px; line-height:24px; background:rgba(255, 255, 255, 0.8);}
 
 /*skills*/
 section#skills>.container{position:relative; height:660px; background-color:#fff;}
