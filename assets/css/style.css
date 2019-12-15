@@ -56,7 +56,7 @@ p.typing-txt{display: none;}
 header{position:fixed; display:flex; justify-content:space-between; align-items:center; left:0; right:0; top:0; padding:1rem; background:#000; z-index:100; opacity:0.8; font-weight:bold;}
 header>h1{margin:0; color:yellow;}
 header>nav>span{color:white; margin-left:20px;}
-
+header>nav>span:hover {padding-bottom:22px; border-bottom:4px solid yellow; }
 
 /* - - - - - - - - 네비게이션 - - - - - - - - */
 
@@ -64,7 +64,7 @@ nav>.nav_indicator{position:fixed; z-index:1000; top:4.5%; right:2%; width:52px;
 
 /*누르면 바뀌는 효과*/
 /*출처 - http://www.htmldrive.net/edit_media/2015/201512/20151228/menu-to-cross-icon-master/index.html*/
- .menu-icon {display: block; position:absolute; top:20px; left:12px; font-size: 2em; max-width: 45px; text-align: center; color:#fff; cursor: pointer; transition: transform .2s ease;}
+.menu-icon {display: block; position:absolute; top:20px; left:12px; font-size: 2em; max-width: 45px; text-align: center; color:#fff; cursor: pointer; transition: transform .2s ease;}
 .menu-icon:hover{transform: scale(0.9);}
 .menu-icon:before, .menu-icon:after{line-height: .5;}
 .menu-icon:before{display: block; content: '☰';}
@@ -107,19 +107,37 @@ nav #gnb>li.lang>a{display:inline-block; width:100px; font-weight:400; font-size
 
 
 
-/* - - - - - - - -  2.  section#about - - - - - - - - */
+/* - - - - - - - -  2.  section - - - - - - - - */
 
+
+
+/*home*/
+section#home{overflow:hidden; position:relative; background-image:url(../../images/about_background2.jpg); background-position:center auto; background-size:cover;}
+section#home>.container{position:relative; height:780px;}
+
+section#home>.container>.t_area {display:inline; position:absolute; left:10px; top:300px; color:#000; text-shadow: 5 5 5px #fff;}
+section#home>.container>.t_area>.t_text {padding:10px; font-size:48px; font-weight: bold;}
+section#home>.container>.t_area>.st_text {padding:10px;  font-size:20px; line-height:24px; background:rgba(255, 255, 255, 0.8);}
 
 
 /*about*/
-section#about{overflow:hidden; position:relative; background-image:url(../../images/about_background2.jpg); background-position:center auto; background-size:cover;}
-section#about>.container{position:relative; height:780px;}
+section#about>.container{position:relative; height:600px; background-color:#fff;}
+section#about>.container>.title{text-align:center; padding:70px;}
+section#about>.container>.title>span{display:block; font-size:18px;}
+section#about>.container>.title>h2{font-size:48px; font-weight:bold; padding:10px;}
+section#about>.container>.title>h2:after{background:#45bbe7; border-radius:0.25em; display:block; width:5%; height:2px; position:absolute; left:47%; content:""; margin-top:10px;}
 
-section#about>.container>.t_area {display:inline; position:absolute; left:10px; top:300px; color:#000; text-shadow: 5 5 5px #fff;}
-section#about>.container>.t_area>.t_text {padding:10px; font-size:48px; font-weight: bold;}
-section#about>.container>.t_area>.st_text {padding:10px;  font-size:20px; line-height:24px; background:rgba(255, 255, 255, 0.8);}
+section#about>.container>.content {width:1200px;}
+section#about>.container>.content>div{float:left; position:relative;}
+section#about>.container>.content>.content_left{width:400px;border-right:2px solid black;}
+section#about>.container>.content>.content_left>.picture{width:250px; height:250px; margin:auto; background-image:url(../../images/me.jpg); background-position: center; background-size:250px; border-radius:50%;}
+section#about>.container>.content>.content_right{width:600px;}
+section#about>.container>.content>.content_right>span{display:block; padding: 10px 50px; font-weight: bold;}
+
+
 
 /*skills*/
+section#skills {width:100%; border-top:1px dotted #000;}
 section#skills>.container{position:relative; height:660px; background-color:#fff;}
 section#skills>.container>.title {text-align: center; padding:70px;}
 section#skills>.container>.title>span {display:block; font-size:18px;}
