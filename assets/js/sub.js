@@ -59,14 +59,11 @@ $(function(){
 		evt.stopPropagation();
 	});
 
-
-
 });
 
 
 
 $(function(){
-	
 	
 		
 	/* ////////////////////////////////// */
@@ -269,10 +266,7 @@ $(function(){
 	$otherWebWorks.on("mouseleave",function(){
 		$otherWebWorksArrow.stop().fadeOut();
 		$otherWebWorksDesc.stop().fadeOut();
-	});
+	});	
 
-
-
-	
 	
 });

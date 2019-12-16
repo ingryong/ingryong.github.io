@@ -5,7 +5,7 @@
 /* - - - - - - - - 리셋 요소 - - - - - - - - */
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,em,img,article,aside,footer,section,nav,address,section,time,ol,ul,li,hr,strong{margin:0; padding:0; border:0; vertical-align:baseline; -webkit-text-size-adjust:none; font-weight:400; font-style:normal;}
 ul,ol,li,dl{list-style:none}
-a:link,a:visited,a:hover,a:active{text-decoration:none; color:#111;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
 hr{display:none;}
 img{border:0;}
 
@@ -55,9 +55,9 @@ p.typing-txt{display: none;}
 /*상단바*/
 header{position:fixed; display:flex; justify-content:space-between; align-items:center; left:0; right:0; top:0; padding:1rem; background:#000; z-index:100; opacity:0.8; font-weight:bold;}
 header>h1{margin:0; color:yellow;}
-header>nav>span{color:white; margin-left:20px;}
-header>nav>span:hover {padding-bottom:22px; border-bottom:4px solid yellow; }
-
+header>nav>a {margin-left:20px; font-weight:bold; color:#fff;}
+header>nav>a:hover {padding-bottom:22px; border-bottom:4px solid yellow;} 
+header>nav>.active {color:yellow;}
 /* - - - - - - - - 네비게이션 - - - - - - - - */
 
 nav>.nav_indicator{position:fixed; z-index:1000; top:4.5%; right:2%; width:52px; height:52px; background-color:#0b749c; border-radius:26px; -webkit-border-radius:26px; transform:translateZ(0); -webkit-transform:translateZ(0);}

@@ -157,4 +157,32 @@ $(function(){
 			$moveBtn.removeClass("go_bottom");
 		}
 	}
+
+	//스크롤 해당 위치에 메뉴바 변경
+	$(window).scroll(function(){
+	    $('nav a').removeClass('active');
+	    var navScr =  $(window).scrollTop();
+
+	    if(navScr <= 650){
+	        $("nav a[href='#home']").addClass('active');
+	    }else if(navScr > 650 && navScr <= 1200){
+	        $("nav a[href='#about']").addClass('active');
+	    }else if(navScr > 1200 && navScr <= 2000){
+	        $("nav a[href='#skills']").addClass('active');
+	    }else{
+	        $("nav a[href='#portfolio']").addClass('active');
+	    }
+	});
+
+
+	$('nav a').click(function(e){
+	    $('nav a').removeClass('active');
+	    $(this).addClass('active');
+
+	    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);//해시값을 가진 위치로 이동
+
+	    var scrollH = $(window).scrollTop();
+	    e.preventDefault();
+	}); //메뉴 클릭하면 스크롤다운
 });
+

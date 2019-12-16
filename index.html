@@ -8,7 +8,7 @@
 	
 	<title>백철우 포트폴리오 페이지</title>
 	
-	<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="assets/js/index.js"></script>
 	
 	<link rel="stylesheet" href="assets/css/style.css"/>
@@ -22,10 +22,10 @@
 	<header class="nd">
 		<h1 class="cp"> Mr.Baek </h1>
 		<nav>
-			<span>HOME</span>
-			<span>ABOUT ME</span>
-			<span>SKILL</span>
-			<span>PORTFOLIO</span>
+			<a href="#home" class="active">HOME</a>
+			<a href="#about">ABOUT ME</a>
+			<a href="#skills">SKILL</a>
+			<a href="#portfolio">PORTFOLIO</a>
 		</nav>
 	</header>
 	<!-- 상단바 종료 --> 
@@ -127,7 +127,7 @@
 								<p><span></span>네일 관련 커뮤니티 앱으로서, 샵-아티스트-고객이 서로 소통하는
 								<br />모바일 웹/앱 커뮤니티 입니다.</p>
 							</div>
-							<div class="links"><a href="nailook_m.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a class="cp" onclick="window.open('http://www.nailook.com', '_blank', 'width=360, height=600')">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
+							<div class="links"><a href="nailook_m.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a class="cp" onclick="alert('테스트용 계정 \n 아이디 : qwer \n 비밀번호 : 1234 \n 팝업이 뜨지 않을 시 새 창 뜨기 허용 옵션을 확인해주세요');window.open('http://www.nailook.com', '_blank', 'width=360, height=600');">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
 						</li>
 						<li class="web w_2">
 							<a href="webnailook.html" class="shortcut"><img src="images/webnailook.jpg" alt="웹네일룩 작업" title="웹네일룩 작업" /></a>
@@ -172,7 +172,31 @@
 		<address><span class="mobile">010 - 3234 - 2398</span> / <a href="mailto:bbgod2@gmail.com" class="mail">bbgod2@gmail.com</a></address>
 	</footer>
 
+	<script>
+		$(function(){
+
+		$("#btn01").click(function () {
+	    	var position = $("#home").offset();
+	    	$('body').stop().animate({scrollTop:position.top},500);
+	  	});  //offset 해당 객체의 위치값을 받아오는 것
+	  	$("#btn02").click(function () {
+	    	var position = $("#about").offset();
+	    	$('body').stop().animate({scrollTop:position.top},500);
+	  	});  // scrollTop 선택한 요소의 상하 스크롤 위치를 얻거나 설정하는 메소드
+	 	$("#btn03").click(function () {
+	    	var position = $("#skills").offset();
+	    	$('body').stop().animate({scrollTop:position.top},500);
+	  	});  // stop 중복방지
+	  	$("#btn04").click(function () {
+	    	var position = $("#portfolio").offset();
+	    	$('body').stop().animate({scrollTop:position.top},500);
+	  	});
+
+		});
+	</script>
+
 
 </div>
+<div id="mask"></div>
 </body>
 </html>
