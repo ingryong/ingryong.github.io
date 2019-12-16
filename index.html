@@ -172,30 +172,6 @@
 		<address><span class="mobile">010 - 3234 - 2398</span> / <a href="mailto:bbgod2@gmail.com" class="mail">bbgod2@gmail.com</a></address>
 	</footer>
 
-	<script>
-		$(function(){
-
-		$("#btn01").click(function () {
-	    	var position = $("#home").offset();
-	    	$('body').stop().animate({scrollTop:position.top},500);
-	  	});  //offset 해당 객체의 위치값을 받아오는 것
-	  	$("#btn02").click(function () {
-	    	var position = $("#about").offset();
-	    	$('body').stop().animate({scrollTop:position.top},500);
-	  	});  // scrollTop 선택한 요소의 상하 스크롤 위치를 얻거나 설정하는 메소드
-	 	$("#btn03").click(function () {
-	    	var position = $("#skills").offset();
-	    	$('body').stop().animate({scrollTop:position.top},500);
-	  	});  // stop 중복방지
-	  	$("#btn04").click(function () {
-	    	var position = $("#portfolio").offset();
-	    	$('body').stop().animate({scrollTop:position.top},500);
-	  	});
-
-		});
-	</script>
-
-
 </div>
 <div id="mask"></div>
 </body>
