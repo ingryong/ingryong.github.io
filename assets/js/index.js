@@ -165,9 +165,9 @@ $(function(){
 
 	    if(navScr <= 650){
 	        $("nav a[href='#home']").addClass('active');
-	    }else if(navScr > 650 && navScr <= 1200){
+	    }else if(navScr > 650 && navScr <= 1300){
 	        $("nav a[href='#about']").addClass('active');
-	    }else if(navScr > 1200 && navScr <= 2000){
+	    }else if(navScr > 1300 && navScr <= 2000){
 	        $("nav a[href='#skills']").addClass('active');
 	    }else{
 	        $("nav a[href='#portfolio']").addClass('active');

@@ -121,7 +121,7 @@ section#home>.container>.t_area>.st_text {padding:10px;  font-size:20px; line-he
 
 
 /*about*/
-section#about>.container{position:relative; height:600px; background-color:#fff;}
+section#about>.container{position:relative; height:700px; background-color:#fff;}
 section#about>.container>.title{text-align:center; padding:70px;}
 section#about>.container>.title>span{display:block; font-size:18px;}
 section#about>.container>.title>h2{font-size:48px; font-weight:bold; padding:10px;}
@@ -129,11 +129,11 @@ section#about>.container>.title>h2:after{background:#45bbe7; border-radius:0.25e
 
 section#about>.container>.content {width:1200px;}
 section#about>.container>.content>div{float:left; position:relative;}
-section#about>.container>.content>.content_left{width:400px;border-right:2px solid black;}
-section#about>.container>.content>.content_left>.picture{width:250px; height:250px; margin:auto; background-image:url(../../images/me.jpg); background-position: center; background-size:250px; border-radius:50%;}
+section#about>.container>.content>.content_left{width:400px; height:300px; border-right:2px solid black;}
+section#about>.container>.content>.content_left>.picture{width:250px; height:250px; margin: 25px auto; background-image:url(../../images/me.jpg); background-position: center; background-size:250px; border-radius:50%;}
 section#about>.container>.content>.content_right{width:600px;}
-section#about>.container>.content>.content_right>span{display:block; padding: 10px 50px; font-weight: bold;}
-
+section#about>.container>.content>.content_right>span{display:block; padding: 4px 50px;}
+section#about>.container>.content>.content_right>.tt{font-weight:bold; padding-top:14px;}
 
 
 /*skills*/
