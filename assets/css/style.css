@@ -127,7 +127,8 @@ section#about>.container>.title>span{display:block; font-size:18px;}
 section#about>.container>.title>h2{font-size:48px; font-weight:bold; padding:10px;}
 section#about>.container>.title>h2:after{background:#45bbe7; border-radius:0.25em; display:block; width:5%; height:2px; position:absolute; left:47%; content:""; margin-top:10px;}
 
-section#about>.container>.content {width:1200px;}
+section#about>.container>.content {width:1200px; *zoom:1;}
+section#about>.container>.content:after {content:""; display:block; clear:both;}
 section#about>.container>.content>div{float:left; position:relative;}
 section#about>.container>.content>.content_left{width:400px; height:300px; border-right:2px solid black;}
 section#about>.container>.content>.content_left>.picture{width:250px; height:250px; margin: 25px auto; background-image:url(../../images/me.jpg); background-position: center; background-size:250px; border-radius:50%;}
@@ -144,14 +145,15 @@ section#skills>.container>.title>span {display:block; font-size:18px;}
 section#skills>.container>.title>h2{font-size:48px; font-weight: bold; padding:10px;}
 section#skills>.container>.title>h2:after{background:#45bbe7; border-radius:0.25em; display:block; width:5%; height:2px; position: absolute; left:47%; content:""; margin-top:10px;}
 
-section#skills>.container>.content {width:1200px;}
-section#skills>.container>.content>.content_box {display:inline-block; position:relative; margin-right:5px; width:280px; height:300px; float:left; text-align:center;}
+section#skills>.container>.content {width:1200px; *zoom:1;}
+section#skills>.container>.content:after {content:""; display:block; clear:both;}
+section#skills>.container>.content>.content_box {margin-right:5px; width:280px; height:300px; float:left; text-align:center;}
 section#skills>.container>.content>.content_box>h3 {font-size:24px; line-height:100px; font-weight:bold;}
 section#skills>.container>.content>.content_box>span {display:block; line-height: 30px;}
 
 /*portfolio*/
 section#portfolio {width:100%; border-top:1px dotted #000;}
-section#portfolio>.container{position:relative; background-color:#fff;}
+section#portfolio>.container{background-color:#fff;}
 section#portfolio>.container>.title {text-align: center; padding:70px;}
 section#portfolio>.container>.title>span {display:block; font-size:18px;}
 section#portfolio>.container>.title>h2{font-size:48px; font-weight: bold; padding:10px;}
@@ -161,8 +163,9 @@ section#portfolio>.container>.content_box {display:inline-block; position:relati
 section#portfolio>.container>.content_box>h3 {font-size:24px; line-height:100px; font-weight:bold;}
 section#portfolio>.container>.content_box>span {display:block; line-height: 30px;}
 
-section#portfolio>.container>.main{width:1000px; height:1100px; margin:50px auto 30px;}
-section#portfolio>.container>.main .web{/*opacity:0; */margin-top:20px; float:left; width:500px; /*콘텐츠 양에 따라 조절되도록 height는 지정하지 않았음*/padding-bottom:60px;}
+section#portfolio>.container>.main{width:1000px; margin:50px auto 30px; *zoom:1;}
+section#portfolio>.container>.main:after {content:""; display:block; clear:both;}
+section#portfolio>.container>.main .web{margin-top:20px; float:left; width:500px; padding-bottom:60px;}
 
 
 /*웹포폴 썸네일 이미지*/
