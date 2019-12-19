@@ -93,8 +93,6 @@ $(function(){
      }  
 
 
-	
-	console.log('새로운 홈페이지를 준비 중이에요!');
     
 	//윈도우 로드 이벤트
 	$(window).on("load resize",function(){
