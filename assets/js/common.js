@@ -82,11 +82,9 @@ $(function(){
         });
 });
 
+//500px미만 시 나타나는 메뉴 버튼 클릭 시 #m의 클래스를 토글하여 메뉴 on/off
 $(function(){
-    // memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
     $(".nav>a").click(function(){
-        // 현재 클릭한 태그가 a 이기 때문에
-        // a 옆의 태그중 ul 태그에 hide 클래스 태그를 넣던지 빼던지 한다.
         $("#m").toggleClass("menuon");
     });
 });
