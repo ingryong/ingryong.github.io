@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+/* --- media 부분 --- */
+@media (max-width:916px){
+    #portfolio .pf_box{width:480px; height:500px; margin:auto; float:none;}
+    #portfolio .pf_box .img_box a img {width:480px; border-radius:20px;}
+}
+
+@media (max-width:800px){
+    #left, #right{width:100%;}
+
+    #skills ul li{width:100%; margin-bottom:20px;}
+    #skills ul li div{top:0; left: 0; width:100%; height:100%; padding:4%; text-align:center;}
+    #skills .html{background: url(../../images/html5_logo.png) no-repeat center center; background-size:20%;}
+    #skills .css{background: url(../../images/css3_logo.png) no-repeat center center; background-size:20%;}
+    #skills .js{background: url(../../images/js_logo.png) no-repeat center center; background-size:20%;}
+}
+
+@media (max-width:500px){  /* 최대 너비 500px이 참 일 때 아래의 스타일 적용 */
+    .header{
+        display:none;/* 브라우저의 너비가 500px이하인 경우에는 .header에 해당하는 정보가 사라짐 */
+    }
+
+    nav .menu1 {
+        display: none;
+        position: fixed;
+        top: 70px;
+        z-index: 100;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0, 0.9);
+        padding: 10px;
+    }
+    #m li{padding:10px;}
+    #m li a:hover{padding-bottom:5px; border-bottom:2px solid yellow;}
+
+    #menu {display:block;}
+
+
+    #left, #right{width:100%; display:flex; flex-direction: column;}
+    #home .t_area {top: 20%;}
+    #portfolio .pf_box{width:100%; margin-left:0;}
+    #portfolio .pf_box .img_box a img {width:100%;}
+    #portfolio .pf_link {padding-left:1%;}
+}

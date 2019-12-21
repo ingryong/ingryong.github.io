@@ -1,182 +1,225 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>	
-	<meta charset="utf-8"/>
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>-->
-	<meta name="description" content="백철우, 퍼블리셔, 포트폴리오"/>
-	<meta name="keywords" content="백철우 포트폴리오 페이지"/>
-	
-	<title>백철우 포트폴리오 페이지</title>
-	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="assets/js/index.js"></script>
-	
-	<link rel="stylesheet" href="assets/css/style.css"/>
-	<link rel="shortcut icon" href="images/favicon.ico">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scale=no">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,600" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/js/common.js"></script>
 
-
+    <link rel="stylesheet"  media="(max-width:916px)" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/web.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <title>백철우 포트폴리오 페이지</title>
 </head>
-
 <body>
-	<!-- 상단바 영역 -->
-	<header class="nd">
-		<h1 class="cp"> Mr.Baek </h1>
-		<nav>
-			<a href="#home" class="active">HOME</a>
-			<a href="#about">ABOUT ME</a>
-			<a href="#skills">SKILL</a>
-			<a href="#portfolio">PORTFOLIO</a>
-		</nav>
-	</header>
-	<!-- 상단바 종료 --> 
+    <!-- header 부분 시작 -->
+    <header class="header nd">
+        <h1>Mr.Baek</h1>
+        <nav class="nav">
+            <a id="menu" class="menu2">MENU</a>
+            <ul id="m" class="menu1">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header 부분 종료 -->
 
-	<div id="wrap">
-		<!-- section - home 영역 -->
-		<section id="home">
-			<div class="container" id="scroll1">
-				<div class="t_area">
-					<p class="t_text nd cd typing-txt">안녕하세요! 웹 퍼블리셔 백철우 입니다.</p>
-					<p class="t_text nd cd typing"></p>
-					<p class="st_text nd cd">
-	여러 실제 서비스되는 웹사이트를 제작하면서 다양한 기술을 터득해 왔습니다.<br/>
-	스스로 생산자이자 동시에 소비자로서 쌓아올린 경험은, 클라이언트에게 보다 섬세하고 직접적이며, 소비자에게 친화적인 서비스를 제공할 것입니다.<br/>
-	이용자들에게 보이지 않는 작은 부분까지도 생각하며 가장 효율적인 방법으로 구현하는 것, 그것이 저의 방식입니다.
-					</p>
-				</div>
-			</div>
-		</section>	
+    <div class="warp cn nd">
+        <!-- section - home 영역 시작 -->
+        <section id="home" class="row home">
+            <div class="container">
+                <div class="t_area">
+                    <p class="typing-txt">안녕하세요! 웹퍼블리셔 백철우 입니다.</p>
+                    <p class="tt typing"></p>
+                    <p class="st slidein">
+                        저는 여러 실제 서비스되는 웹사이트를 제작하면서 다양한 기술을 터득해왔습니다.<br/>
+                        스스로 생산자이자 동시에 소비자로서 쌓아올린 경험은, 클라이언트에게 보다 섬세하고 직접적이며, 소비자에게 친화적인 서비스를 제공할 것입니다.<br/>
+	                    이용자들에게 보이지 않는 작은 부분까지도 생각하며 가장 효율적인 방법으로 구현하는 것, 그것이 저의 방식입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section - home 영역 종료 -->
 
 
-	<!-- section - about 영역 -->
-	<section id="about">
-		<div class="container nd">
-			<div class="title">
-				<span class="secondary">About me</span>
-				<h2 >About me!</h2>
-			</div>
-			
-			<div class="content">
-				<div class="content_left">
-					<div class="picture">
-					</div>
-				</div>
-				<div class="content_right">
-					<span class="tt">인적사항</span>
-					<span>백철우</span>
-					<span> 1992. 02. 06</span>
-					<span>대한민국 서울특별시 거주</span>
-					<span>010 - 3234 - 2398 / bbgod2@gmail.com</span>
-					<span class="tt">학력 / 경력 사항</span>
-					<span>[2007.03 - 2010.02] 미래산업과학고등학교 디자인과 졸업</span>
-					<span>[2010.03 - 2017.02] 성결대학교 멀티미디어공학부 졸업</span>
-					<span>[2016.06 - 2016.09] 브릿지컴퍼니 인턴 근무</span>
-					<span>[2016.12 - 2017.07] (주)더인 개발팀 디자인&퍼블리셔 근무</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- section - skills 영역 -->
-	<section id="skills">
-		<div class="container nd">
-			<div class="title">
-				<span class="secondary">Skills</span>
-				<h2 >What can I do?</h2>
-			</div>
-			
-			<div class="content">
-				<div class="content_box">
-					<h3>HTML</h3>
-					<span>HTML5 페이지 하드코딩</span>
-					<span>모바일 페이지 제작</span>
-					<span>웹 접근성 준수</span>
-					<span>시멘틱 마크업 지향</span>
-				</div>
-				<div class="content_box">
-					<h3>CSS</h3>
-					<span>CSS3 하드코딩</span>
-					<span>반응형 및 적응형 레이아웃</span>
-					<span>브라우저별 호환성 관리</span>
-				</div>
-				<div class="content_box">
-					<h3>JavaScript</h3>
-					<span>jQuery1~3, jQuery UI</span>
-					<span>JSON</span>
-					<span>라이브러리 활용</span>
-				</div>
-				<div class="content_box">
-					<h3>Design</h3>
-					<span>Photoshop</span>
-					<span>Illustrator</span>
-					<span>포스터 및 배너 등 제작</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- section - portfolio 영역 -->
-	<section id="portfolio">
-		<div class="container nd">
-			<div class="title">
-				<span class="secondary">Portfolio</span>
-				<h2>My Works</h2>
-			</div>
-			
-			<div class="main">
-					<ul>
-						<li class="web w_1">
-							<a href="nailook_m.html" class="shortcut cp"><img src="images/nailook_m.jpg" alt="네일룩 제작" title="네일룩 제작" /></a>
-							<div>
-								<h3>네일룩</h3><span>MOBILE WEB / APP</span>
-								<p><span></span>네일 관련 커뮤니티 앱으로서, 샵-아티스트-고객이 서로 소통하는
-								<br />모바일 웹/앱 커뮤니티 입니다.</p>
-							</div>
-							<div class="links"><a href="nailook_m.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a class="cp" onclick="alert('테스트용 계정 \n 아이디 : qwer \n 비밀번호 : 1234 \n 팝업이 뜨지 않을 시 새 창 뜨기 허용 옵션을 확인해주세요');window.open('http://www.nailook.com', '_blank', 'width=360, height=600');">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
-						</li>
-						<li class="web w_2">
-							<a href="webnailook.html" class="shortcut"><img src="images/webnailook.jpg" alt="웹네일룩 작업" title="웹네일룩 작업" /></a>
-							<div>
-								<h3>웹 네일룩</h3><span>PC WEB</span>
-								<p><span></span>네일룩의 샵 매니저의 편리한 샵 관리를 위해 제작된 
-								<br />관리자 전용 PC 웹 페이지 입니다. </p>
-							</div>
-							<div class="links"><a href="webnailook.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a href="http://bcwm302.cafe24.com/webnailook2/jsp/index.jsp" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
-						</li>
-						<li class="web w_3">
-							<a href="thein.html" class="shortcut"><img src="images/thein.jpg" alt="(주)더인 웹사이트 작업" title="(주)더인 웹사이트 작업" /></a>
-							<div>
-								<h3>(주)더인 웹사이트</h3><span>PC WEB</span>
-								<p><span></span>(주)더인의 고객 소개용 웹사이트이며
-								<br />PC 웹을 통한 접근만을 고려하여 제작하였습니다.</p>
-							</div>
-							<div class="links"><a href="thein.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a href="http://www.thein.kr" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
-						</li>
-						<li class="web w_4">
-							<a href="theinedu.html" class="shortcut"><img src="images/theinedu.jpg" alt="더인에듀 작업" title="더인에듀 작업" /></a>
-							<div>
-								<h3>더인에듀 웹사이트</h3><span>PC WEB</span>
-								<p><span></span>(주)더인의 교육사업 홈페이지로서,<br/>홈페이지를 통한 홍보 및 교육신청/강의실 대관 등 <br/>다양한 서비스를 제공합니다.<br/>
-							</div>
-							<div class="links"><a href="theinedu.html" target="_blank">&gt; <span class="accent_1">작업 과정</span> 보기</a><a href="http://edu.thein.kr" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a></div>
-						</li>
-					</ul>
-				</div>
+        <!-- section - about 영역 시작 -->
+        <section id="about" class="row about">
+            <div class="title">
+                <span class="secondary">About me</span>
+                <h2>About me!</h2>
+            </div>
 
-		</div>
-	</section>
-	
-	<div class="move">
-		<a href="#" class="to_top_bottom text_indent">페이지 위아래 이동 버튼</a>
-		<!--<a href="#" class="to_home text_indent">홈으로 이동 버튼</a> -->
-	</div>
-	
-	<footer>
-		<p>&copy; 2019 CHEOL-WOO BAEK</p>
-		<p><span>TㆍHㆍAㆍNㆍK</span>YㆍOㆍU</p>
-		<address><span class="mobile">010 - 3234 - 2398</span> / <a href="mailto:bbgod2@gmail.com" class="mail">bbgod2@gmail.com</a></address>
-	</footer>
+            <div class="about_cont clearfix">
+                <div id="left" class="left">
+                    <img class="picture" src="images/me.jpg">
+                </div>
+                <div id="right" class="right">
 
-</div>
-<div id="mask"></div>
+                    <span class="me_ico">
+                        백철우<br>
+                        1992. 02. 06<br>
+                        010 - 3234 - 2398 / bbgod2@gmail.com</span>
+					<span class="book_ico line">
+                        [2007.03 - 2010.02] 미래산업과학고등학교 디자인과 졸업<br>
+                        [2010.03 - 2017.02] 성결대학교 멀티미디어공학부 졸업</span>
+                    <span class="job_ico line">[2016.06 - 2016.09] 브릿지컴퍼니 인턴 근무<br>
+                        [2016.12 - 2017.07] (주)더인 개발팀 디자인&퍼블리셔 근무</span>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- section - home 영역 종료 -->
+
+
+        <!-- section - skills 영역 시작 -->
+        <section id="skills" class="row">
+            <div class="title">
+                <span class="secondary">Skills</span>
+                <h2>What can I do?</h2>
+            </div>
+
+            <div class="skills_cont clearfix">
+                <ul id="skills_box">
+                    <li class="con_box">
+                        <div class="html">
+                            <h3>HTML5</h3>
+                            <p>HTML5 페이지 하드코딩</br>
+                            모바일 페이지 제작</br>
+                            웹 접근성 준수</br>
+                            시멘틱 마크업 지향</p>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <div class="css">
+                            <h3>CSS3</h3>
+                            <p>CSS3 하드코딩</br>
+                            반응형 및 적응형 레이아웃 가능</br>
+                            브라우저별 호환성 관리</p>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <div class="js">
+                            <h3>JavaScript</h3>
+                            <p>자바스크립트 기본 문법과 조건문, 반복문 다루기</br>
+                                jQuery 라이브러리 활용</p>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <div class="design">
+                            <h3>Design</h3>
+                            <p>Photoshop</br>
+                            Illustrator</br>
+                            포스터 및 배너 등 제작</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section - skills 영역 종료 -->
+
+
+        <!-- section - portfolio 영역 시작 -->
+        <section id="portfolio" class="row clearfix">
+            <div class="title">
+                <span class="secondary">Portfoilo</span>
+                <h2>My Works</h2>
+            </div>
+
+            <div class="pf_cont">
+                <div class="pf_box">
+                    <div class="img_box clearfix w_1">
+                        <a href="nailook_m.html" class="shortcut cp">
+                            <img src="images/nailook_m.jpg" alt="네일룩 프로젝트" title="네일룩 프로젝트"/>
+                        </a>
+                    </div>
+                    <div class="pf_script">
+                        <h3>네일룩</h3><span>JSP HYBRID APP</span>
+                        <p><span></span>네일 관련 커뮤니티 앱으로서, 샵-아티스트-고객이 서로 소통하는 모바일 웹/앱 커뮤니티 입니다.
+                        </p>
+                    </div >
+                    <div class="pf_link">
+                        <a href="nailook_m.html">&gt; <span class="accent_1">작업과정</span> 보기</a>
+                        <a onclick="alert('테스트용 계정 \n 아이디 : qwer \n 비밀번호 : 1234 \n 팝업이 뜨지 않을 시 새 창 뜨기 허용 옵션을 확인해주세요'); window.open('http://www.nailook.com','_blank', 'width=360, height=600');">&gt; <span class="accent_2">결과물</span> 바로 보기</a>
+                    </div>
+                </div>
+                <div class="pf_box">
+                    <div class="img_box clearfix w_2">
+                        <a href="webnailook.html" class="shortcut">
+                            <img src="images/webnailook.jpg" alt="웹네일룩 프로젝트" title="웹네일룩 프로젝트"/>
+                        </a>
+                    </div>
+                    <div class="pf_script">
+                        <h3>웹 네일룩</h3><span>PC WEB</span>
+                        <p><span></span>네일룩 샵 매니저의 보다 편리한 샵 관리를 위해 제작된 관리자 전용 PC웹페이지 입니다.</p>
+                    </div>
+                    <div class="pf_link">
+                        <a href="webnailook.html">&gt; <span class="accent_1">작업과정</span> 보기</a>
+                        <a href="http://bcwm302.cafe24.com/webnailook2/jsp/index.jsp" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a>
+                    </div>
+                </div>
+                <div class="pf_box">
+                    <div class="img_box clearfix w_3">
+                        <a href="thein.html" class="shortcut">
+                            <img src="images/thein.jpg" alt="(주)더인 웹사이트 작업" title="(주)더인 웹사이트 작업" />
+                        </a>
+                    </div>
+                    <div class="pf_script">
+                        <h3>(주)더인 웹사이트</h3><span>PC WEB</span>
+                        <p><span></span>(주)더인의 고객 소개용 웹사이트이며 PC웹을 통한 접근만을 고려하여 제작하였습니다.</p>
+                    </div>
+                    <div class="pf_link">
+                        <a href="thein.html">&gt; <span class="accent_1">작업 과정</span> 보기</a><a href="http://www.thein.kr" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a>
+                    </div>
+                </div>
+                <div class="pf_box">
+                    <div class="img_box clearfix w_4">
+                        <a href="theinedu.html" class="shortcut">
+                            <img src="images/theinedu.jpg" alt="더인에듀 작업" title="더인에듀 작업" />
+                        </a>
+                    </div>
+                    <div class="pf_script">
+                        <h3>더인에듀 웹사이트</h3><span>PC WEB</span><p><span></span>(주)더인의 교육사업 홈페이지로서, 홈페이지를 통한 홍보 및 교육신청/강의실 대관 등 다양한 서비스를 제공합니다.<br/>
+                    </div>
+                    <div class="pf_link">
+                        <a href="theinedu.html" target="_blank">&gt; <span class="accent_1">작업 과정</span> 보기</a><a href="http://edu.thein.kr" target="_blank">&gt; <span class="accent_2">결과물</span> 바로 보기</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- section - portfolio 영역 종료 -->
+
+    </div>
+
+    <!-- 위로 move 버튼 영역 시작 -->
+    <nav class="move">
+        <a href="#home" alt="위로 버튼"></a>
+    </nav>
+    <!-- 위로 move 버튼 영역 종료 -->
+
+
+    <!-- footer 영역 시작-->
+    <footer class="footer clearfix">
+        <ul>
+            <li>
+                <span class="color1">TㆍHㆍAㆍNㆍKㆍ</span><span class="color2">YㆍOㆍU</span>
+            </li>
+            <li>
+                <span class="mobile">010 - 3234 - 2398</span><br>
+                <a href="mailto:bbgod2@gmail.com" class="mail">bbgod2@gmail.com</a>
+            </li>
+            <li>
+                &copy; 2019 CHEOL-WOO BAEK
+            </li>
+        </ul>
+    </footer>
+    <!-- footer 영역 종료-->
 </body>
 </html>
