@@ -47,7 +47,7 @@ background-color:rgba(255,255,255,0.5);}
 
 .home{top:0; left:0; right:0; width:100%; background-image:url(../../images/about_background2.jpg); background-size:cover; background-position:center auto;}
 .home .container {height:700px;}
-.home .t_area {position: absolute; padding-left:30px; padding-right:30px; top:300px; transition: 1s all ease;}
+.home .t_area {position: absolute; padding-left:30%; padding-right:30px; top:300px; transition: 1s all ease;}
 .home .t_area .tt{padding:10px; font-size:2.5rem; font-weight: bold; background:rgba(255,255,0,0.5);}
 .home .t_area .st{padding:10px; font-size:1rem; background:rgba(255,255,255,0.5);}
 

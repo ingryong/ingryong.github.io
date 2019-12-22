@@ -2,12 +2,17 @@
 
 
 /* --- media 부분 --- */
+
+@media (max-width:1500px){
+    #home .t_area{padding-left:20%;}
+}
 @media (max-width:916px){
     #portfolio .pf_box{width:480px; height:500px; margin:auto; float:none;}
     #portfolio .pf_box .img_box a img {width:480px; border-radius:20px;}
 }
 
 @media (max-width:800px){
+    #home .t_area{padding-left:10%;}
     #left, #right{width:100%;}
 
     #skills ul li{width:100%; margin-bottom:20px;}
@@ -18,6 +23,7 @@
 }
 
 @media (max-width:500px){  /* 최대 너비 500px이 참 일 때 아래의 스타일 적용 */
+    #home .t_area{padding-left:5%;}
     .header{
         display:none;/* 브라우저의 너비가 500px이하인 경우에는 .header에 해당하는 정보가 사라짐 */
     }
